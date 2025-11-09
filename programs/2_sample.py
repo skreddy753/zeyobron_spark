@@ -1,6 +1,4 @@
-import os
-import sys
-
+import os, sys
 from pyspark.sql import SparkSession
 
 os.environ['PYSPARK_PYTHON'] = sys.executable
