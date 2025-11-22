@@ -10,18 +10,10 @@ spark = SparkSession.builder.getOrCreate()
 sc = spark.sparkContext
 ###########################################
 
-spark.range(10).show()
+print(sc.parallelize(["first", "second"]).collect())
 
-print(" ==STARTED== ")
+import time
 
-a = 2
-print(a)
+time.sleep(360)  # in browser hit this url ---->   localhost:4040
 
-b = a + 2
-print(b)
-
-c = "Zeyobron"
-print(c)
-
-d = c + " Analytics"
-print(d)
+# localhost:4040
